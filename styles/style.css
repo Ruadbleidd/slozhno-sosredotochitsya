@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-.page {
+.page { 
   background-image: url(../images/cover-image-dark.png); 
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -377,7 +377,7 @@ border-block-end: 1px solid var(--text-color);
 
 
 @media (max-width:768px ) {
-   .header__theme-menu{
+   .header__theme-menu {
     grid-area: f;
    }
    .REC {
@@ -533,6 +533,7 @@ border-block-end: 1px solid var(--text-color);
 
 .text-content {
   grid-column-start: auto;
+  word-spacing: 20px;
 }
 
 .concentration-title {
@@ -556,9 +557,7 @@ border-block-end: 1px solid var(--text-color);
   padding-left: 0 ;
 }
 
-.text-content {
-  word-spacing: 20px;
-}
+
 
 .advices {
   padding-block-end: 0.5em;
