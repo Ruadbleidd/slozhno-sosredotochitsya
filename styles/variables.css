@@ -4,14 +4,14 @@
 */
 :root {
   --main-font: sans-serif;
-  --accent-font: 'IBM Plex mono';
-  --accent-color: #DB00FF;
-  --text-color:  #F1B2CE;
+  --accent-font: "IBM Plex mono";
+  --accent-color: #db00ff;
+  --text-color: #f1b2ce;
   --bg-color: #000028;
-  --text-bg-color: #FF0070;
-  --a-border: #F1B2CE 0.5;
-  --text-name-color:#FF0070;
-  --text-name:var(--text-bg-color);
-  --text-name-paragraph:var(var(--bg-color));
+  --text-bg-color: #ff0070;
+  --a-border: #f1b2ce 0.5;
+  --text-name-color: #ff0070;
+  --text-name: var(--text-bg-color);
+  --text-name-paragraph: var(--bg-color);
   --border-color_button: rgba(255, 0, 112, 0.4);
 }

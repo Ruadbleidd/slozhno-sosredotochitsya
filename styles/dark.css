@@ -9,6 +9,7 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --background-image: url(../images/cover-image-dark.png);
   --main-font: sans-serif;
   --accent-font: 'IBM Plex mono';
   --accent-color: #DB00FF;
@@ -19,6 +20,7 @@
   --a-border: #F1B2CE 0.5;
   --shadow-decor:var(--text-bg-color);
   --text-paragraph:var(--text-bg-color)
+  --text-name-paragraph:var(--bg-color);
 }
 
 .title-decor {

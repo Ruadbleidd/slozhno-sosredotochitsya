@@ -1,13 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8" name="color-scheme" content="dark light" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      content="width=device-width, initial-scale=1.0"
-      name="color-scheme"
-      content="dark light"
-    />
+    <meta content="width=device-width, initial-scale=1.0" name="color-scheme" />
     <title>Сложно сосредоточиться</title>
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
@@ -23,6 +19,7 @@
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
             <button
+              enabled
               class="header__theme-menu-button header__theme-menu-button_type_light"
             >
               день
@@ -31,13 +28,14 @@
           <li class="header__theme-menu-item">
             <button
               class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
-              disabled
+              enabled
             >
               авто
             </button>
           </li>
           <li class="header__theme-menu-item">
             <button
+              enabled
               class="header__theme-menu-button header__theme-menu-button_type_dark"
             >
               неон

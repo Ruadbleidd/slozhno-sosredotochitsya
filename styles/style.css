@@ -6,7 +6,7 @@
 }
 
 .page {
-  background-image: url(../images/cover-image-dark.png);
+  background-image: var(--background-image);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -16,8 +16,6 @@
   font-family: var(--accent-font), sans-serif;
   max-inline-size: 1024px;
 }
-
-
 
 .header {
   display: grid;
@@ -186,7 +184,6 @@
   color: var(--text-color);
   font-size: 17px;
   line-height: 23.4px;
-  word-spacing: 2px;
   letter-spacing: 0px;
   grid-row-start: 3;
   word-spacing: 4px;
@@ -196,13 +193,14 @@
   padding-block-start: 3em;
   display: grid;
   grid-template-columns: 35% 64.5%;
-  grid-template-rows: 4.5% 4% 25.5% 3.5% 15% 3.5% 20.5% 3.5% 15% 4%;
+  grid-template-rows: 5% 3.5% 25.5% 3.5% 15% 3.5% 20.5% 3.5% 15% 4%;
   padding-block-end: 11.75em;
   align-items: start;
   padding-right: 15px;
 }
 
 .text-advices {
+  color: var(--bg-color);
   background-color: var(--text-bg-color);
   font-weight: 400;
   font-size: 18px;
@@ -295,6 +293,10 @@
 .header__theme-menu-button:focus {
   outline: none;
   border-block-end: 1px solid var(--text-name);
+}
+
+.header__theme-menu-button:disabled {
+  outline: 1px solid var(--text-name);
 }
 
 .link {
@@ -417,7 +419,7 @@
   .advices {
     padding-block-start: 3.25em;
     grid-template-columns: 34% 63%;
-    grid-template-rows: 4% 2.5% 25% 2.5% 15.5% 2.5% 23% 2.5% 15.5% 2.5%;
+    grid-template-rows: 4% 2.7% 24.7% 2.8% 15% 2.9% 22.9% 2.5% 15.4% 2.7%;
     padding-block-end: 10.5em;
     justify-content: space-between;
   }
@@ -456,11 +458,12 @@
   }
 
   .header {
-    grid-template-columns: 3%;
     grid-template-areas:
       "a a f"
       "g s s"
       "e c c";
+    padding-right: 5px;
+    padding-left: 9px;
   }
 
   .header-title_text {
@@ -531,7 +534,7 @@
 
   .text-advices {
     grid-column-start: auto;
-    word-spacing: 0.6rem;
+    word-spacing: -2px;
   }
 
   .gallerey {
@@ -545,7 +548,7 @@
     gap: 8px;
     padding-left: 10px;
     padding-right: 10px;
-    padding-block-end: 36px;
+    padding-block-end: 38px;
   }
 
   .gallerey-items {
@@ -565,5 +568,16 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
+  :root {
+    background-image: var(--background-image);
+    font-family: var(--accent-font, sans-serif);
+    --accent-color: rgba(255, 194, 230, 1);
+    --text-bg-color: rgba(255, 141, 203, 1);
+    --text-name: rgba(53, 52, 48, 1);
+    --text-color: #353430;
+    --visible-none: hidden;
+    --text-name-paragraph: var(--text-name);
+    --border-color_button: rgba(50, 49, 45, 0.4);
+  }
 }

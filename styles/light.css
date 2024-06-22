@@ -5,35 +5,25 @@
 */
 
 .page.theme_light {
-background-image: url(../images/cover-image-light.png);
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-size: cover;
-background-position: center;
-margin: auto;
-padding: 0;
-font-family: var(--accent-font, sans-serif);
---accent-color: rgba(255, 194, 230, 1);
---text-bg-color:  rgba(255, 141, 203, 1);
---text-name:rgba(53, 52, 48, 1);
---text-color: #353430;
---visible-none: hidden ;
---text-name-paragraph:var(--text-name);
---border-color_button:rgba(50, 49, 45, 0.4);
+  --background-image: url(../images/cover-image-light.png);
+  font-family: var(--accent-font, sans-serif);
+  --accent-color: rgba(255, 194, 230, 1);
+  --text-bg-color: rgba(255, 141, 203, 1);
+  --text-name: rgba(53, 52, 48, 1);
+  --text-color: #353430;
+  --visible-none: hidden;
+  --text-name-paragraph: var(--text-name);
+  --border-color_button: rgba(50, 49, 45, 0.4);
 }
-
-
 
 .title-decor {
   text-shadow: 4px 4px 0 var(--shadow-decor);
 }
 
-
 :root {
-  --shadow-decor :#FF0070;
-
-} 
+  --shadow-decor: #ff0070;
+}
 
 .REC {
- visibility: var(--visible-none);
+  visibility: var(--visible-none);
 }
