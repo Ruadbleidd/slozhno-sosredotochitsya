@@ -16,6 +16,7 @@
   --border-color_button: rgba(50, 49, 45, 0.4);
 }
 
+
 .title-decor {
   text-shadow: 4px 4px 0 var(--shadow-decor);
 }
