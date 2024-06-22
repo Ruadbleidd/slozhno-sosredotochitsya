@@ -18,7 +18,7 @@
   --text-name-color:#FF0070;
   --a-border: #F1B2CE 0.5;
   --shadow-decor:var(--text-bg-color);
-  
+  --text-paragraph:var(--text-bg-color)
 }
 
 .title-decor {

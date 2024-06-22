@@ -4,7 +4,10 @@
 ::after {
   box-sizing: border-box;
 }
-
+/* .page   *,  *::before,
+*::after {
+  outline: 1px solid red;
+} */
 .page {
   background-image: url(../images/cover-image-dark.png);
   background-repeat: no-repeat;
@@ -15,6 +18,7 @@
   padding: 0;
   font-family: var(--accent-font), sans-serif;
   max-inline-size: 1024px;
+
 }
 
 .header {
@@ -43,13 +47,12 @@
 
 .text-paragraph {
   grid-area: c;
-  max-inline-size: 58.5%;
-  word-spacing: 6px;
-  font-size: 17px;
+  max-inline-size: 59%;
+  font-size: 18px;
   font-weight: 900;
+  color: var(--text-name-paragraph);
   background-color: var(--text-bg-color);
   margin-block-end: 1em;
-  margin-right: 5px;
 }
 
 .REC {
@@ -62,8 +65,8 @@
   color: var(--text-bg-color);
   font-size: 17px;
   text-transform: uppercase;
-  top: 23px;
-  right: 34px;
+  top: 22px;
+  right: 35px;
 }
 
 .REC::after {
@@ -73,14 +76,14 @@
   block-size: 9px;
   background-color: var(--text-bg-color);
   border-radius: 50%;
-  top: 28px;
+  top: 29px;
   right: 14px;
 }
 
 .header__theme-menu-list {
   display: flex;
   padding-block-start: 20px;
-  padding-left: 51px;
+  padding-left: 48px;
   gap: 28px;
   list-style: none;
   justify-content: center;
@@ -100,12 +103,12 @@
 .header__theme-menu-button {
   border: transparent;
   background-color: transparent;
-  color: var(--text-name-color);
+  color: var(--text-name);
   font-size: 17px;
 }
 
 .title-content {
-  color: var(--text-name-color);
+  color: var(--text-name);
   font-weight: bold;
   font-size: 18px;
   padding-left: 18px;
@@ -117,7 +120,6 @@
   background-color: var(--text-bg-color);
   font-size: 18px;
   grid-column-start: 2;
-  letter-spacing: 0.5px;
   margin-block-start: 0;
   font-weight: 700;
 }
@@ -177,7 +179,7 @@
 }
 
 .advices {
-  padding-block-start: 3.1em;
+  padding-block-start: 3.3em;
   display: grid;
   grid-template-columns: 35% 64.5%;
   grid-template-rows: 4.5% 4% 25.5% 3.5% 15% 3.5% 20.5% 3.5% 15% 4%;
@@ -187,13 +189,15 @@
 
 .text-advices {
   background-color: var(--text-bg-color);
+  font-weight: 400;
   font-size: 18px;
+  word-spacing: -3px;
   grid-column-start: 2;
 }
 
 .title-advices {
   font-size: 18px;
-  color: var(--text-name-color);
+  color: var(--text-name);
   word-spacing: -1px;
   padding-left: 18px;
   font-weight: bold;
@@ -201,6 +205,7 @@
 
 .text-advices-title {
   background-color: var(--text-bg-color);
+  word-spacing: -2px;
   font-size: 18px;
   font-weight: 900;
   color: var(--bg-color);
@@ -249,7 +254,7 @@
   font-size: 18px;
   background-color: var(--text-bg-color);
   color: var(--bg-color);
-  word-spacing: 8px;
+  word-spacing: -1px;
   font-weight: bold;
 }
 
@@ -267,18 +272,18 @@
   min-block-size: 668px;
 }
 
+
 .header__theme-menu-button:hover {
-  outline: 1px solid var(--text-name-color);
+  outline: 1px solid var( --border-color_button);
 }
 
 .header__theme-menu-button:focus {
   outline: none;
-  border-block-end: 1px solid var(--text-name-color);
+  border-block-end: 1px solid var(--text-name);
 }
 
-.header__theme-menu-button:default {
-  border-radius: 1px solid var(--text-name-color);
-}
+
+
 
 .link {
   color: var(--text-color);
@@ -314,7 +319,10 @@
   border-top: 1px solid var(--text-name-color);
 }
 
-@media (max-width: 768px) {
+
+
+
+@media (width < 1024px) {
   .header__theme-menu {
     grid-area: f;
   }
@@ -367,7 +375,7 @@
   }
 
   .decorated-zone::after {
-    inset: 2% 96.5%;
+    inset: 2.8% 96.5%;
   }
 
   .decorated-zone::before {
@@ -413,7 +421,7 @@
   }
 }
 
-@media (max-width: 375px) {
+@media (width < 768px) {
   .text-paragraph {
     word-spacing: -2px;
     max-inline-size: 100%;
@@ -537,5 +545,5 @@
 
 
 @media (prefers-color-scheme: dark) {
-  
+
 }
