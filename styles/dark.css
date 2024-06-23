@@ -27,14 +27,8 @@
   text-shadow: 4px 4px var(--text-bg-color);
 }
 
-/* :root {
-  --main-font: sans-serif;
-  --accent-font: 'IBM Plex mono';
-  --accent-color: #DB00FF;
-  --text-color:  #F1B2CE;
-  --bg-color: #000028;
-  --text-bg-color: #FF0070;
-  --a-border: #F1B2CE 0.5;
-} */
+:root {
+  --background-image: url(../images/cover-image-dark.png);
+}
 
 
