@@ -17,9 +17,6 @@
   max-inline-size: 1024px;
 }
 
-
-
-
 .header {
   display: grid;
   position: relative;
@@ -388,7 +385,6 @@
     word-spacing: -1px;
   }
 
-
   .decorated-zone::before {
     inset: 96% 2.5%;
   }
@@ -462,8 +458,8 @@
       "a a f"
       "g s s"
       "e c c";
-      padding-right: 0px;
-      padding-left: 10px;
+    padding-right: 0px;
+    padding-left: 10px;
   }
 
   .header-title_text {
@@ -567,11 +563,10 @@
   }
 }
 
-
-@media (width < 380px){
+@media (width < 380px) {
   .decorated-zone::after {
     inset: 1% 92%;
-}
+  }
 }
 
 @media (prefers-color-scheme: light) {
@@ -587,7 +582,6 @@
     --border-color_button: rgba(50, 49, 45, 0.4);
   }
 }
-
 
 @media (prefers-color-scheme: dark) {
   :root {
